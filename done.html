@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+
+    <title></title>
+</head>
+<style>
+  img {
+    width: 60px;
+    
+  }
+    body {
+    font-family: 'Archivo', sans-serif;
+font-family: 'Quicksand', sans-serif;
+background: #F1F1F1;
+}
+.cum {
+  background: #fff;
+  width: 100%;
+  height: 230px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+* {
+  margin: 0 auto;
+}
+</style>
+
+<body>
+<center>
+  <div class="cum">
+    <br />
+    <br />
+  <img src="done.png" alt="" />
+  <br />
+  <h1 style="font-size: 20px;">Congrats.</h1>
+  <br />
+  <b>You Have Successfully Sent <span style="color: #6935FE;">₦50,000.00</span> To <span id="result" style="color: #6935FE;"></span> PalmPay Account</b>
+  
+  </div>
+</center>
+</body>
+
+</html>
+<script>
+  document.getElementById("result").innerHTML=localStorage.getItem("textvalue");
+    document.getElementById("amount").innerHTML=localStorage.getItem("textmiddle");
+    document.getElementById("name").innerHTML=localStorage.getItem("textname");
+
+</script>

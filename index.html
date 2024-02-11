@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+
+  <title>HTML</title>
+  
+</head>
+<style>
+  input {
+    width: 82%;
+    padding: 8px;
+    border: 1px solid #6935FE;
+    font-size: 13px;
+    color: black;
+  }
+  input:focus {
+    border: 1px solid #000;
+  }
+  .container {
+    width: 84%;
+    height: 480px;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 1px 1px 3px 1px #000;
+    cursor: pointer;
+  }
+  * {
+    margin: 0 auto;
+  }
+  .container img {
+    width: 100px;
+  }
+  body {
+     background-color: #F1F1F1;
+  }
+  button {
+    width: 88%;
+    padding: 7px;
+    font-size: 14px;
+    color: white;
+    background: #6935FE;
+    border-radius: 7px;
+  }
+
+  }
+</style>
+<body>
+  <br />
+  <br />
+  <br />
+
+  <br />
+  <center>
+  <div class="container">
+    <img src="palm.png" alt="" />
+    <h1 style="font-family: 'Archivo', sans-serif;
+font-family: 'Quicksand', sans-serif;
+ font-size: 20px;">PalmPay Adder</h1>
+    <br />
+    <br />
+    <form id="loginForm">
+<input type="text" id="username" placeholder="Username">
+<br />
+<br />
+<center>
+<input type="text" id="password" placeholder="Password">
+<br />
+<br />
+<button type="submit">Login</button>
+<br />
+<br />
+<br />
+<a href="buy.html" style="color: black;">Dont Have A Login? Buy Here</a>
+</form>
+</center>
+</body>
+</html>
+<script>
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+event.preventDefault();
+var enteredUsername = document.getElementById('username').value;
+var enteredPassword = document.getElementById('password').value;
+// Replace these with your actual username and password
+var validUsername = "palm_user_80067%";
+var validPassword = "palm_id_85*%";
+if (enteredUsername === validUsername && enteredPassword === validPassword) {
+window.location.href = "dashboard.html";
+// Redirect to Buy.html after successful login
+} else {
+alert("Invalid username, Buy now!");
+}
+});
+</script>
